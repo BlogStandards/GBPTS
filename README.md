@@ -327,7 +327,7 @@ Telegram 的频道分类比较成熟，所以直接照搬了其分类，有少�
 
 目前只使用了 `language-zh-CN` 表示中文翻译，`summary` 表示简介，`subtype` 表示子分类，所以应该不会很复杂。
 
-你可以在 /categories.yml 查看目前已规定的 `category`。
+你可以在 [/categories.yml](categories.yml) 查看目前已规定的 `category`。
 
 ### 定义方法
 
