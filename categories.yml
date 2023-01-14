@@ -1,0 +1,85 @@
+Arts:
+- language-zh-CN: 艺术
+- summary: Arts and media:
+  - language-zh-CN: 艺术与作品
+- subtype:
+  - Architecture:
+    - language-zh-CN: 建筑
+  - Books:
+    - language-zh-CN: 书籍
+  - Crafts:
+    - language-zh-CN: 工艺品
+  - Design:
+    - language-zh-CN: 设计
+  - Fashion:
+    - language-zh-CN: 时尚
+    - summary:  Fashion and tailoring
+  - Game:
+    - language-zh-CN: 游戏
+  - Illustration:
+    - language-zh-CN: 插画
+  - Images:
+    - language-zh-CN: 图片
+  - Magazines:
+    - language-zh-CN: 杂志
+  - Movies:
+    - language-zh-CN: 电影
+  - Museums:
+    - language-zh-CN: 博物馆
+  - Music:
+    - language-zh-CN: 音乐
+  - Photography:
+    - language-zh-CN: 摄影
+  - Radio:
+    - language-zh-CN: 收音机
+  - TV:
+    - language-zh-CN: 电视节目
+  - Theatre:
+    - language-zh-CN: 剧院
+IT:
+- language-zh-CN: 信息技术
+- summary: Information Technology, Computers, internet, tech
+- subtype:
+  - Apple:
+    - language-zh-CN: 苹果公司
+  - AI:
+    - language-zh-CN: 人工智能 (AI)
+    - summary: Artificial intelligence
+  - Cryptocurrencies:
+    - language-zh-CN: 加密货币
+  - Development:
+    - language-zh-CN: 开发
+  - Graphics:
+    - language-zh-CN: 图像技术
+  - Hardware:
+    - language-zh-CN: 硬件技术
+  - Internet:
+    - language-zh-CN: 因特网
+  - VR:
+    - language-zh-CN: 虚拟现实 (VR)
+  - AR:
+    - language-zh-CN: 现实增强 (AR)
+  - Metaverse:
+    - language-zh-CN: 元宇宙
+Business:
+- language-zh-CN: 商业
+- summary: Economics and business
+- subtype:
+  - Company:
+    - language-zh-CN: 公司
+Education:
+- language-zh-CN: 教育
+Politics:
+- language-zh-CN: 政治
+- summary: Government, politics and law
+Humanities:
+- language-zh-CN: 人文
+Recreation:
+- language-zh-CN: 娱乐
+Science
+- language-zh-CN: 科学
+Society
+- language-zh-CN: 社会
+- summary: Society
+Uncategorizable
+- language-zh-CN: 无法分类
