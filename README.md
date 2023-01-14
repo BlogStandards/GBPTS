@@ -320,35 +320,48 @@ Arts:
 - summary: Arts and media
 - summary-chinese: 艺术与作品
 - subtype:
-  - Architecture
+  - Architecture:
+    - chinese: 建筑
   - Books:
     - chinese: 书籍
-    - subtype:
-      Literature:
-      - chinese: 文学
-  - Crafts
-  - Design
+  - Crafts:
+    - chinese: 工艺品
+  - Design:
+    - chinese: 设计
   - Fashion:
     - chinese: 时尚
     - summary: Fashion and tailoring
-  - Gaming:
+  - Game:
     - chinese: 游戏
-  - Illustration
-  - Images
-  - Magazines
-  - Movies
-  - Museums
-  - Music
-  - Photography
-  - Radio
-  - TV
-  - Theatre
+  - Illustration:
+    - chinese: 插画
+  - Images:
+    - chinese: 图片
+  - Magazines:
+    - chinese: 杂志
+  - Movies:
+    - chinese: 电影
+  - Museums:
+    - chinese: 博物馆
+  - Music:
+    - chinese: 音乐
+  - Photography:
+    - chinese: 摄影
+  - Radio:
+    - chinese: 收音机
+  - TV:
+    - chinese: 电视节目
+  - Theatre:
+    - chinese: 剧院
 IT:
 - chinese: 信息技术
 - summary: Information Technology, Computers, internet, tech
 Business:
 - chinese: 商业
 - summary: Economics and business
+- subtype:
+  - Company:
+    - chinese: 公司
 Education:
 - chinese: 教育
 - summary: ~
