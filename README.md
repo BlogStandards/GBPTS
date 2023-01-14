@@ -216,9 +216,22 @@ Preferred-Value: cmn-Hant
 
 通常语言标签是在 HTML 中已经声明，但许多静态博客生成器是在配置里写入的语言标签，所以博主使用其他语言编写博文时，语言标签不会产生变化，导致语言标签与实际的内容不符的情况，所以通常得使用正则式匹配字符，或者人力确认语言。
 
+除了定义语言之外，可以可对一些支持多语言的属性标签进行多语言标注，那么其 YAML 片段大概如下：
+
+```yaml
+- 标题:
+  - language-zh-CN: "2022 年度最佳"
+  - language-en-US: "The Best of 2022"
+- 简介:
+  - language-zh-CN: "回顾今年最佳的内容吧！"
+  - language-en-US: "Check out this year's best content!"
+```
+
 ### 表示方式
 
 只要在语言代码前加上 `language:` 的前缀就好。比如简体中文的网站使用 `language:zh-CN`。
+
+如果是作为属性标签的多语言标注，那么将冒号变更为短横线，作为「键」来使用。
 
 ## GBTS 0102 地域属性标签
 
@@ -312,94 +325,94 @@ Telegram 的频道分类比较成熟，所以直接照搬了其分类，有少�
 
 考虑到表格转换到爬虫读取的数据过于麻烦，为了便于维护，还是直接建立一个数据结构比较好，下面我使用 YAML 创建了包含标签、译名、简介和子类型的数据，应该会有些帮助。
 
-目前只使用了 chinese 表示翻译，summary 表示简介，subtype 表示子分类，所以应该不会很复杂。
+目前只使用了 `language-zh-CN` 表示中文翻译，`summary` 表示简介，`subtype` 表示子分类，所以应该不会很复杂。
 
 ```yaml
 Arts:
-- chinese: 艺术
-- summary: Arts and media
-- summary-chinese: 艺术与作品
+- language-zh-CN: 艺术
+- summary: Arts and media:
+  - language-zh-CN: 艺术与作品
 - subtype:
   - Architecture:
-    - chinese: 建筑
+    - language-zh-CN: 建筑
   - Books:
-    - chinese: 书籍
+    - language-zh-CN: 书籍
   - Crafts:
-    - chinese: 工艺品
+    - language-zh-CN: 工艺品
   - Design:
-    - chinese: 设计
+    - language-zh-CN: 设计
   - Fashion:
-    - chinese: 时尚
+    - language-zh-CN: 时尚
     - summary: Fashion and tailoring
   - Game:
-    - chinese: 游戏
+    - language-zh-CN: 游戏
   - Illustration:
-    - chinese: 插画
+    - language-zh-CN: 插画
   - Images:
-    - chinese: 图片
+    - language-zh-CN: 图片
   - Magazines:
-    - chinese: 杂志
+    - language-zh-CN: 杂志
   - Movies:
-    - chinese: 电影
+    - language-zh-CN: 电影
   - Museums:
-    - chinese: 博物馆
+    - language-zh-CN: 博物馆
   - Music:
-    - chinese: 音乐
+    - language-zh-CN: 音乐
   - Photography:
-    - chinese: 摄影
+    - language-zh-CN: 摄影
   - Radio:
-    - chinese: 收音机
+    - language-zh-CN: 收音机
   - TV:
-    - chinese: 电视节目
+    - language-zh-CN: 电视节目
   - Theatre:
-    - chinese: 剧院
+    - language-zh-CN: 剧院
 IT:
-- chinese: 信息技术
+- language-zh-CN: 信息技术
 - summary: Information Technology, Computers, internet, tech
 - subtype:
   - Apple:
-    - chinese: 苹果公司
+    - language-zh-CN: 苹果公司
   - AI:
-    - chinese: 人工智能 (AI)
+    - language-zh-CN: 人工智能 (AI)
     - summary: Artificial intelligence
   - Cryptocurrencies:
-    - chinese: 加密货币
+    - language-zh-CN: 加密货币
   - Development:
-    - chinese: 开发
+    - language-zh-CN: 开发
   - Graphics:
-    - chinese: 图像技术
+    - language-zh-CN: 图像技术
   - Hardware:
-    - chinese: 硬件技术
+    - language-zh-CN: 硬件技术
   - Internet:
-    - chinese: 因特网
+    - language-zh-CN: 因特网
   - VR:
-    - chinese: 虚拟现实 (VR)
+    - language-zh-CN: 虚拟现实 (VR)
   - AR:
-    - chinese: 现实增强 (AR)
+    - language-zh-CN: 现实增强 (AR)
   - Metaverse:
-    - chinese: 元宇宙
+    - language-zh-CN: 元宇宙
 Business:
-- chinese: 商业
+- language-zh-CN: 商业
 - summary: Economics and business
 - subtype:
   - Company:
-    - chinese: 公司
+    - language-zh-CN: 公司
 Education:
-- chinese: 教育
+- language-zh-CN: 教育
 Politics:
-- chinese: 政治
+- language-zh-CN: 政治
 - summary: Government, politics and law
 Humanities:
-- chinese: 人文
+- language-zh-CN: 人文
 Recreation:
-- chinese: 娱乐
+- language-zh-CN: 娱乐
 Science
-- chinese: 科学
+- language-zh-CN: 科学
 Society
-- chinese: 社会
+- language-zh-CN: 社会
 - summary: Society
 Uncategorizable
-- chinese: 无法分类
+- language-zh-CN: 无法分类
 ```
 
 ### 定义方法
