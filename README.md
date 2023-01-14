@@ -289,18 +289,18 @@ Telegram 的频道分类比较成熟，所以直接照搬了其分类，有少�
 | 英文             | 中文         |二级标签（中文）|
 | ---------------- | ------------ | ------------ |
 | Politics         | 政治         | 民主政治      |
-| Videos (Movies)  | 视频（电影） | 
-| Entertainment    | 娱乐         |
-| Books            | 图书         |
-| Music            | 音乐         |
-| News             | 消息         |
-| Education        | 教育         |
-| Technology       | 技术         |
-| Games            | 游戏         |
-| Apps             | 应用程序     |
-| Blogs            | 博客         |
-| Linguistics      | 语言学       |
-| Business         | 商业（公司） |
+| Videos (Movies)  | 视频（电影） | 喜剧电影       |
+| Entertainment    | 娱乐         | 旅游          |
+| Books            | 图书         | 儿童图书       |
+| Music            | 音乐         | 古典音乐      |
+| News             | 消息         |              |
+| Education        | 教育         | 高等教育      |
+| Technology       | 技术         | 土木工程       |
+| Games            | 游戏         | 单机游戏       |
+| Apps             | 应用程序     |                |
+| Blogs            | 博客         |                |
+| Linguistics      | 语言学       | 语音学          |
+| Business         | 商业（公司） | 市场营销        |
 | Food             | 食物         |
 | Art              | 艺术         |
 | Sales            | 销售         |
@@ -322,10 +322,10 @@ Telegram 的频道分类比较成熟，所以直接照搬了其分类，有少�
 
 博客的 `category-tc:Games` 标签，可以覆盖博文的标签。
 
-## GBTS 0104 篇幅标签
+## GBTS 0104 篇幅属性标签
 
 ```yaml
-标题: 篇幅标签
+标题: 篇幅属性标签
 创建时间: 2023年1月14日
 可选标签: 是
 传递特性: 是
