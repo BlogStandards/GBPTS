@@ -356,6 +356,28 @@ Arts:
 IT:
 - chinese: 信息技术
 - summary: Information Technology, Computers, internet, tech
+- subtype:
+  - Apple:
+    - chinese: 苹果公司
+  - AI:
+    - chinese: 人工智能 (AI)
+    - summary: Artificial intelligence
+  - Cryptocurrencies:
+    - chinese: 加密货币
+  - Development:
+    - chinese: 开发
+  - Graphics:
+    - chinese: 图像技术
+  - Hardware:
+    - chinese: 硬件技术
+  - Internet:
+    - chinese: 因特网
+  - VR:
+    - chinese: 虚拟现实 (VR)
+  - AR:
+    - chinese: 现实增强 (AR)
+  - Metaverse:
+    - chinese: 元宇宙
 Business:
 - chinese: 商业
 - summary: Economics and business
@@ -364,25 +386,20 @@ Business:
     - chinese: 公司
 Education:
 - chinese: 教育
-- summary: ~
 Politics:
 - chinese: 政治
 - summary: Government, politics and law
 Humanities:
 - chinese: 人文
-- summary: ~
 Recreation:
 - chinese: 娱乐
-- summary: ~
 Science
 - chinese: 科学
-- summary: ~
 Society
 - chinese: 社会
 - summary: Society
 Uncategorizable
 - chinese: 无法分类
-- summary: ~
 ```
 
 ### 定义方法
