@@ -317,6 +317,8 @@ Telegram 的频道分类比较成熟，所以直接照搬了其分类，有少�
 
 内容属性标签分为 `category` 和 `tag`，`category` 作为博文的主题，所以通常很少，比如 1~2 个，而 `tag` 可以很多，并且 `tag` 可以创建任意字符。
 
+如果你选择使用 `Extension` 作为博文的 `category`，那么你需要在 `Extension` 后面用冒号描述你所要拓展的 `category`，例如 `category:Extension:Life` 就可以表示博文属于生活 `category`，这个 `category` 是自己拓展的，解析器不能在标准中发现。
+
 博文的 `category:Games` 标签，不能覆盖博文的标签。
 
 博客的 `category-tc:Games` 标签，可以覆盖博文的标签。
