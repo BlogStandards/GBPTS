@@ -96,12 +96,19 @@ IT:
 Business:
 - language-en-US: Business
 - language-zh-CN: 商业
-- summary:
-  - language-en-US: Economics and business
 - subtype:
   - Company:
     - language-en-US: Company
     - language-zh-CN: 公司
+  - Economics:
+    - language-en-US: Economics
+    - language-zh-CN: 经济学
+  - Finance:
+    - language-en-US: Finance
+    - language-zh-CN: 理财
+  - Work:
+    - language-en-US: Work
+    - language-zh-CN: 工作
 Education:
 - language-en-US: Education
 - language-zh-CN: 教育
@@ -110,19 +117,67 @@ Politics:
 - language-zh-CN: 政治
 - summary:
   - language-en-US: Government, politics and law
+- subtype:
+  - Government:
+    - language-en-US: Government
+    - language-zh-CN: 政府
+  - Law:
+    - language-en-US: Law
+    - language-zh-CN: 法律
+  - Military:
+    - language-en-US: Military
+    - language-zh-CN: 军事
 Humanities:
 - language-en-US: Humanities
 - language-zh-CN: 人文
+- subtype:
+  - Futures:
+    - language-en-US: Futures
+    - language-zh-CN: 未来
+  - Geography:
+    - language-en-US: Geography
+    - language-zh-CN: 地理
+  - History:
+    - language-en-US: History
+    - language-zh-CN: 历史
+  - Language:
+    - language-en-US: Language
+    - language-zh-CN: 语言
+  - Philosophy:
+    - language-en-US: Philosophy
+    - language-zh-CN: 哲学
 Recreation:
 - language-en-US: Recreation
 - language-zh-CN: 娱乐
 Science:
 - language-en-US: Science
 - language-zh-CN: 科学
+- subtype:
+  - Engineering:
+    - language-en-US: Engineering
+    - language-zh-CN: 工程学
+  - Medicine:
+    - language-en-US: Medicine
+    - language-zh-CN: 医学
+  - Natural:
+    - language-en-US: Natural
+    - language-zh-CN: 自然
+  - Space:
+    - language-en-US: Astronomy
+    - language-zh-CN: 天文
 Society:
 - language-en-US: Society
 - language-zh-CN: 社会
-- summary:
+- subtype:
+  - Psychogeography:
+    - language-en-US: Psychogeography
+    - language-zh-CN: 心理
+  - Religion:
+    - language-en-US: Religion
+    - language-zh-CN: 宗教
+  - Self-improvement:
+    - language-en-US: Self-improvement
+    - language-zh-CN: 自我提升
 Uncategorizable:
 - language-en-US: Uncategorizable
 - language-zh-CN: 无法分类
