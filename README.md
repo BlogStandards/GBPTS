@@ -49,13 +49,16 @@ GBPTS 0000 是索引，会收录所有的 GBPTS 内容，并对可行性进行�
 | ---- | -------------------------------------------------------- |
 | 0    | [通用博文标签标准索引](#gbpts-0000-通用博文标签标准索引) |
 | 3    | [博文标签上限](#gbpts-0003-博文标签上限)                 |
+| 4    | [元数据表示方法](#gbpts-0004-html-元数据表示方法)        |
+| 5    | [使用第三方元数据](#gbpts-0005-使用第三方元数据)         |
 | 102  | [地域属性标签](#gbpts-0102-地域属性标签)                 |
 | 103  | [内容属性标签](#gbpts-0103-内容属性标签)                 |
 | 104  | [篇幅属性标签](#gbpts-0104-篇幅属性标签)                 |
+| 105  | [标题属性标签](#gbpts-0105-标题属性标签)                 |
 
 ### 延期的 GBPTS
 
-小组认为以下 GBPTS 没有朝着标准化的方向发展， 但他们还没有撤回。
+小组认为以下 GBPTS 没有朝着标准化的方向发展，但他们还没有撤回。
 
 ### 拒绝的 GBPTS
 
@@ -173,6 +176,82 @@ a --> b["栏目／分类／板块等"] --> o
 | 艺术分类     | `<meta name="gbpts.category" content="Art">`       |
 | 简体中文语言 | `<meta name="gbpts.language" content="zh-CN">`     |
 | 这是一个标题 | `<meta name="gbpts.title" content="这是一个标题">` |
+
+## GBPTS 0005 使用第三方元数据
+
+```yaml
+标题: 使用第三方元数据
+创建时间: 2023年1月17日
+```
+
+0005 是 [0004](#gbpts-0004-html-元数据表示方法) 的补充，会解释那些元数据可以使用、如何使用。
+
+### Open Graph
+
+Open Graph 是 Facebook 提出的协议，作用是让站外链接在 Facebook 里具有美观的标题、配图预览效果。
+
+Open Graph 的元数据的「键」在 \<meta> 标签的 property 属性里，所以标题属性标签就像下面一样：
+
+```html
+<meta property="og:title" content="这是一个标题" />
+```
+
+下面是可能有兼容性的标签列表：
+
+| 属性名                  | 数据类型     | 含义     | GBPTS 序号                       |
+| ----------------------- | ------------ | -------- | -------------------------------- |
+| og:title                | string       | 标题     | [0105](#gbpts-0105-标题属性标签) |
+| og:locale               | string       | 语言     | [0101](#gbpts-0101-语言属性标签) |
+| og:site_name            | string       | 网站名称 |                                  |
+| og:url                  | URL          | 链接     |                                  |
+| og:image                | URL          | 标题图   |                                  |
+| og:description          | string       | 简介     |                                  |
+| og:type                 | string       | 网页类型 |                                  |
+| article:published_time  | datetime     | 发布时间 |                                  |
+| article:modified_time   | datetime     | 修改时间 |                                  |
+| article:expiration_time | datetime     | 过期时间 |                                  |
+| article:section         | string       | 分类     |                                  |
+| article:tag             | string array | 标签     |                                  |
+| article:author          | URL array    | 作者     |                                  |
+| profile:first_name      | string       | 名       |                                  |
+| profile:last_name       | string       | 姓       |                                  |
+| profile:username        | string       | 用户名   |                                  |
+
+`og:type` 在博客网站中通常有 article, profile 和 website 这几种属性，article 用在博文页面，profile 用在个人简介页面，而 website 用在其他页面，比如主页、翻页、存档等位置。
+
+`article:author` 相对比较特殊，它的值是一个链接，作者名称的数据在那个页面里寻找，这是 Facebook 的某种分离性的设计，下面是作者页面 `example.com/profile.html` 的演示：[^opgep]
+
+[^opgep]: <https://github.com/niallkennedy/open-graph-protocol-examples/blob/master/profile.html>
+
+```html
+<!DOCTYPE html>
+<html lang="zh">
+<head prefix="og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#">
+<meta charset="utf-8">
+<title>张三的个人页面</title>
+<meta property="og:title" content="张三的个人页面">
+<meta property="og:site_name" content="Open Graph protocol examples">
+<meta property="og:type" content="profile">
+<meta property="og:locale" content="zh_CN">
+<link rel="canonical" href="http://example.com/profile.html">
+<meta property="og:url" content="http://example.com/profile.html">
+<meta property="og:image" content="http://example.com/media/images/50.png">
+<meta property="og:image:secure_url" content="https://example.com/media/images/50.png">
+<meta property="og:image:width" content="50">
+<meta property="og:image:height" content="50">
+<meta property="og:image:type" content="image/png">
+<meta property="profile:first_name" content="John">
+<meta property="profile:last_name" content="Doe">
+<meta property="profile:gender" content="male">
+<meta property="profile:username" content="johndoe">
+</head>
+<body>
+<p>张三的个人页面</p>
+</body>
+</html>
+```
+
+其他内容：播客 (Podcast) 和 Vlog（视频博客）的 Open Graph 元数据似乎并不普遍，所以暂不探索。
 
 ## GBPTS 0101 语言属性标签
 
