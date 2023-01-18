@@ -1,0 +1,186 @@
+Arts:
+- language-en-US: Arts
+- language-zh-CN: 艺术
+- summary:
+  - language-en-US: Arts and media
+  - language-zh-CN: 艺术与作品
+- subtype:
+  - Architecture:
+    - language-en-US: Architecture
+    - language-zh-CN: 建筑
+  - Books:
+    - language-en-US: Books
+    - language-zh-CN: 书籍
+  - Crafts:
+    - language-en-US: Crafts
+    - language-zh-CN: 工艺品
+  - Design:
+    - language-en-US: Design
+    - language-zh-CN: 设计
+  - Fashion:
+    - language-en-US: Fashion
+    - language-zh-CN: 时尚
+    - summary:
+      - language-en-US: Fashion and tailoring
+  - Game:
+    - language-en-US: Game
+    - language-zh-CN: 游戏
+  - Illustration:
+    - language-en-US: Illustration
+    - language-zh-CN: 插画
+  - Images:
+    - language-en-US: Images
+    - language-zh-CN: 图片
+  - Magazines:
+    - language-en-US: Magazines
+    - language-zh-CN: 杂志
+  - Movies:
+    - language-en-US: Movies
+    - language-zh-CN: 电影
+  - Museums:
+    - language-en-US: Museums
+    - language-zh-CN: 博物馆
+  - Music:
+    - language-en-US: Music
+    - language-zh-CN: 音乐
+  - Photography:
+    - language-en-US: Photography
+    - language-zh-CN: 摄影
+  - Radio:
+    - language-en-US: Radio
+    - language-zh-CN: 收音机
+  - TV:
+    - language-en-US: TV
+    - language-zh-CN: 电视节目
+  - Theatre:
+    - language-en-US: Theatre
+    - language-zh-CN: 剧院
+IT:
+- language-en-US: IT
+- language-zh-CN: 信息技术
+- summary:
+  - language-en-US: Information Technology, Computers, internet, tech
+- subtype:
+  - Apple:
+    - language-en-US: Apple
+    - language-zh-CN: 苹果公司
+  - AI:
+    - language-en-US: AI
+    - language-zh-CN: 人工智能 (AI)
+    - summary:
+      - language-en-US: Artificial intelligence
+  - Cryptocurrencies:
+    - language-en-US: Cryptocurrencies
+    - language-zh-CN: 加密货币
+  - Development:
+    - language-en-US: Development
+    - language-zh-CN: 开发
+  - Graphics:
+    - language-en-US: Graphics
+    - language-zh-CN: 图像技术
+  - Hardware:
+    - language-en-US: Hardware
+    - language-zh-CN: 硬件技术
+  - Internet:
+    - language-en-US: Internet
+    - language-zh-CN: 因特网
+  - VR:
+    - language-en-US: VR
+    - language-zh-CN: 虚拟现实 (VR)
+  - AR:
+    - language-en-US: AR
+    - language-zh-CN: 现实增强 (AR)
+  - Metaverse:
+    - language-en-US: Metaverse
+    - language-zh-CN: 元宇宙
+Business:
+- language-en-US: Business
+- language-zh-CN: 商业
+- subtype:
+  - Company:
+    - language-en-US: Company
+    - language-zh-CN: 公司
+  - Economics:
+    - language-en-US: Economics
+    - language-zh-CN: 经济学
+  - Finance:
+    - language-en-US: Finance
+    - language-zh-CN: 理财
+  - Work:
+    - language-en-US: Work
+    - language-zh-CN: 工作
+Education:
+- language-en-US: Education
+- language-zh-CN: 教育
+Politics:
+- language-en-US: Politics
+- language-zh-CN: 政治
+- summary:
+  - language-en-US: Government, politics and law
+- subtype:
+  - Government:
+    - language-en-US: Government
+    - language-zh-CN: 政府
+  - Law:
+    - language-en-US: Law
+    - language-zh-CN: 法律
+  - Military:
+    - language-en-US: Military
+    - language-zh-CN: 军事
+Humanities:
+- language-en-US: Humanities
+- language-zh-CN: 人文
+- subtype:
+  - Futures:
+    - language-en-US: Futures
+    - language-zh-CN: 未来
+  - Geography:
+    - language-en-US: Geography
+    - language-zh-CN: 地理
+  - History:
+    - language-en-US: History
+    - language-zh-CN: 历史
+  - Language:
+    - language-en-US: Language
+    - language-zh-CN: 语言
+  - Philosophy:
+    - language-en-US: Philosophy
+    - language-zh-CN: 哲学
+Recreation:
+- language-en-US: Recreation
+- language-zh-CN: 娱乐
+Science:
+- language-en-US: Science
+- language-zh-CN: 科学
+- subtype:
+  - Engineering:
+    - language-en-US: Engineering
+    - language-zh-CN: 工程学
+  - Medicine:
+    - language-en-US: Medicine
+    - language-zh-CN: 医学
+  - Natural:
+    - language-en-US: Natural
+    - language-zh-CN: 自然
+  - Space:
+    - language-en-US: Astronomy
+    - language-zh-CN: 天文
+Society:
+- language-en-US: Society
+- language-zh-CN: 社会
+- subtype:
+  - Psychogeography:
+    - language-en-US: Psychogeography
+    - language-zh-CN: 心理
+  - Religion:
+    - language-en-US: Religion
+    - language-zh-CN: 宗教
+  - Self-improvement:
+    - language-en-US: Self-improvement
+    - language-zh-CN: 自我提升
+Uncategorizable:
+- language-en-US: Uncategorizable
+- language-zh-CN: 无法分类
+Extension:
+- language-en-US: Extension
+- language-zh-CN: 拓展
